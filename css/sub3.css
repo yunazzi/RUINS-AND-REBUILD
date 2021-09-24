@@ -6,9 +6,10 @@ li{list-style: none;}
 body{
     font-family: 'Noto Sans KR';
     font-style: 16px;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 24px;
     height: auto;
+    color: #333;
     -webkit-text-size-adjust:none
 
 }
@@ -17,8 +18,8 @@ body{
 
 /*start*/
 
-header{width: 100%; height: 70px; position: relative;}
-.header_area{width: 100%; height: 100%; text-align: center; background: #000;}
+header{width: 100%; height: 60px; position: relative;}
+.header_area{width: 100%; height: 100%; text-align: center; background: #111;}
 /* .header_area>a{width: 50px; height: 50px;} */
 
 /*hambur bars*/
@@ -27,10 +28,10 @@ header{width: 100%; height: 70px; position: relative;}
     width: 100%; height: 100%; top: 0; right: -100%; position: fixed;
     color: #fff; z-index: 1; transition: all .135s; 
 }
-.nav a{line-height: 80px; color: #fff;}
+.nav a{line-height: 80px; color: #111;}
 .nav_menu.on{width: 100%; height: 100%; right: 0; text-align: center;}
 
-.nav_menu .hamburbars{width: auto; height: 0%; top: -3.8%; right: 10%; position: fixed;}
+.nav_menu .hamburbars{width: auto; height: 0%; top: -4.5%; right: 10%; position: fixed;}
 .nav_menu .hamburbars span{display: block; width: 28px; height: 3px; background: #cacaca; margin-top: 50px; transition: .5s; border-radius: 5px;}
 .nav_menu .hamburbars span ~ span {display: block; margin: 7px 0 0 ;}
 
@@ -46,11 +47,12 @@ header{width: 100%; height: 70px; position: relative;}
     display: flex;
     align-items: center;
     height: 100%;
-    background: #3d64a0;
+    background: #fff;
     flex-direction: column;
     justify-content: space-around;
     /* padding-top: 50px; */
 }
+/* 3d64a0 */
 
 .emphasized {position:fixed; box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px; z-index : 100;}
 
@@ -59,52 +61,41 @@ header{width: 100%; height: 70px; position: relative;}
 
 .nav_text>p{
     font-size: 18px; letter-spacing: -1px; color: #fff;
-    top: 3.5%; left: 10%; position: absolute; 
-    height: 80px; 
+    top: 3%; left: 10%; position: absolute; 
+    height: 60px; 
     flex-direction: row;
     align-self: center;
+    line-height: 18px;
     /* display: flex; align-items: start; margin: auto 10%; align-content: start; */
 }
 main{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     flex-direction: column;
     justify-content: space-around;
 }
+
+.main_title>p{font-size: 22px; font-weight: bold; margin:10% 10% 6% 10%;}
+
+
 .main_img{width: 100%; margin: 0 auto; text-align: center; height: auto;}
-.main_img>img{max-width: 100%;}
+.main_img>img{max-width: 100%; filter: brightness(80%); padding: 0 10%;}
+.main_ex{font-size: 16px; padding: 0 10%; margin-top: 10%; line-height: 30px;}
+.main_ex span{font-size: 22px; font-weight: 500;}
 
 /* .main_ex{
-    width: 90%; height: 35%; position: absolute; right: 0; top: 60%;
+    width: 90%; height: auto; position: absolute; right: 0; top: 40%;
     background: #fff; border: 1px solid rgb(234,234,234);
-    border-radius: 3% 0% 0% 3%; overflow: scroll; overflow-x: hidden;
-    font-size: 18px;
-    
+    border-radius: 2% 0 0 2%; font-size: 16px;
 }
-.main_ex p{margin: 7%; -webkit-overflow-scrolling: touch; font-weight: 300; line-height: 200%;}
-.main_ex span{font-size: 24px; font-weight: 500; color: #333;} */
-/* .main_ex p{
-    overflow: auto;
-    width: 80%;
-    height: 35%;
-} */
+.main_ex p{margin: 7%; font-weight: 300; line-height: 200%;}
+.main_ex span{font-size: 24px; font-weight: 500; color: #333;}
+.clear{clear: both;} */
 
-.main_ex::-webkit-scrollbar {
-    width: 12px;
-}
-.main_ex::-webkit-scrollbar-thumb {
-    background-color: rgb(199, 199, 199);
-    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);
-    border-radius: 20px;
-}
-.main_ex::-webkit-scrollbar-track {
-    background-color: #eaeaea;
-    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    border: 1px solid rgb(234,234,234);
-}
 
 #section01{margin-top: 30%; margin-bottom: 20%;}
+#section02{margin-bottom: 20%;}
 
 
 /* article */
@@ -136,7 +127,7 @@ main{margin-bottom: 30%;}
     flex-direction: row;
     justify-content: space-around;
     height: 8%;
-    background: #000;
+    background: #111;
     position: fixed;
     font-size: 12px;
     bottom: 0;
