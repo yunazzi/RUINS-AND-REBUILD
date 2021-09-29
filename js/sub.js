@@ -19,6 +19,25 @@ $(function(){
     // });
 
 
+    
+
+    //goTop
+    $(window).scroll(function(){
+        var scroll = $(this).scrollTop();
+        console.log(scroll);
+        if(scroll>1100){
+            $('.goTop').fadeIn();
+            // $('.goTop').css({'opacity':'1'},20000000);
+        };
+        if(scroll>0 && scroll<1100){
+            $('.goTop').fadeOut();
+            // $('.goTop').css({'opacity':'0'},20000000);
+        };
+    });
+    $('.goTop').click(function(){
+        $('html, body').stop().animate({'scrollTop': 0},1500);
+    });
+    
     //스크롤다운시 햄버거바 사라짐
     var scrollsize = $('.nav_menu').height();
     $(window).scroll(function(){  // 윈도우 스크롤 기능 작동
@@ -30,4 +49,4 @@ $(function(){
             $('.nav_menu .hamburbars').css('display','block');
         }
     });
-})
+});
