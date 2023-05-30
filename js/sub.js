@@ -1,10 +1,23 @@
 $(function(){
-    //햄버거바 
+    //햄버거바
+    
+    // $('.nav').hide();
     $('.nav_menu .hamburbars').on('click',function(){
+        // $(this).toggleClass('on');
+        // $('.nav_menu').toggleClass('on');
+        // $('.nav_menu').toggleClass('emphasized');
+        // $('nav').show();
         $(this).toggleClass('on');
-        $('.nav_menu').toggleClass('on');
-        $('.nav_menu').toggleClass('emphasized');
+        // $('.nav_menu').toggleClass('on');
+        $('.nav').toggleClass('on');
+
     });
+
+    // $('.nav_menu .hamburbars').on('click',function(){
+    //     $(this).toggleClass('on');
+    //     $('.nav_menu').toggleClass('on');
+    //     $('.nav_menu').toggleClass('emphasized');
+    // });
     
     // //이미지크기조절
     // $("#post_content img, .resizablebox").each(function() {
